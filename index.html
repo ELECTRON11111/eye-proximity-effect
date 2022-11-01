@@ -6,8 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eye Proximity Effect</title>
     <script src="app.js"></script>
+    
+    <style>
+        body {
+            background-color: #fff;
+            color: #fff;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        main {
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        #eyes,
+        #eyes img {
+            position: absolute;
+        }
+    </style>
 </head>
 <body>
-    
+    <main>
+        <img src="./minion.png" id="anchor" />
+        <div id="eyes">
+            <img src="./eye.png" class="eye" style="bottom:132px; left:-175px" />
+            <img src="./eye.png" class="eye" style="bottom:132px; left:60px" />
+        </div>
+    </main>
 </body>
 </html>
